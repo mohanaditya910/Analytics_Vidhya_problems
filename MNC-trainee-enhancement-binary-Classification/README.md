@@ -1,10 +1,8 @@
 # Achieved top 10 percentile score in the Private Leader board of this competetion..
 
-my understanding will be updated soon..
-
 ## Problem Statement:
 
-Given by them..
+A multi-national company is providing training to its employees on sales. So they want to decide whether the employee has passed the trainging given to him based on the data provided. Our job is to build a machhine learning model which can help the company in making better decisions.
 
 The given problem is a **Binary classification problem** evaluated on the basis of **AUC_ROC_Score**. It contains both **Categorical and Continous** variables.
 
@@ -34,6 +32,10 @@ I have choosen **XGBClassifier** with eval_metric='auc',objective='rank:pairwise
 explain 'rank:pairwise'
 
 ## What the best approches were??
+
+I dropped 'test_id' and 'trainee_id' without checking their importance. By looking at the name, I thought that they wont be important. That is a major setback as they are the important features in other's models. So, I learnt that don't drop any feature without checking its importance and let some statistics be there to support you in dropping that variable.
+
+Mostly, they were using XGBOOST, lightgbm a lighter version.
 
 
 
