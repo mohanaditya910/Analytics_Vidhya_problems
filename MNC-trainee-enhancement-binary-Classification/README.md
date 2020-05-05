@@ -29,7 +29,7 @@ As, I could not find any relations between variables which are dominated by cate
 
 I have choosen **XGBClassifier** with eval_metric='auc',objective='rank:pairwise', max_depth=10. These parameters were giving the best score (0.799) after getting in them in gridsearch.
 
-explain 'rank:pairwise'
+rank:pairwise: Use LambdaMART to perform pairwise ranking where the pairwise loss is minimized.
 
 ## What the best approches were??
 
